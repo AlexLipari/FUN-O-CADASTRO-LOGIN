@@ -6,3 +6,6 @@ function dadosUsuario (){
     senha[contador]=prompt("digite uma senha!")
     contador++
 }
+function operacaoSolicitada (){
+    return prompt("qual operação deseja fazer? (1) Cadastro (2) Login (3) Excluir (4) Encerrar")
+}
