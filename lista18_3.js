@@ -34,4 +34,14 @@ function ExcluirCadastro(nomeParametro){
             senha[index] = 0
         }
     }
+    for (var atual =0; atual < contador - 1; atual++){
+        for(var seguinte = atual +1; seguinte < contador; seguinte++){
+            if (nome[atual] == 0){
+                nome[atual] = nome[seguinte]
+                nome[seguinte] = 0
+                senha[atual] = senha[seguinte]
+                senha[seguinte] = 0
+            }
+        }
+    }
 }
