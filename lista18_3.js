@@ -45,5 +45,15 @@ function ExcluirCadastro(nomeParametro){
         }
     }
     
-    
+    var nomeAux = []
+    var senhaAux = []
+
+    for (var index = 0; index < contador; index++){
+        if (nome[index] !=0 ){
+            nomeAux[index] = nome[index]
+            senhaAux[index] = senha[index]
+        }
+    }
+    nome = nomeAux
+    senha = senhaAux
 }
