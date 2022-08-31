@@ -27,3 +27,11 @@ for (var index = 0; index < contador; index ++){
 }
 return false
 }
+function ExcluirCadastro(nomeParametro){
+    for (var index = 0;index< contador; index++){
+        if (nomeParametro == nome[index]){
+            nome[index] = 0
+            senha[index] = 0
+        }
+    }
+}
